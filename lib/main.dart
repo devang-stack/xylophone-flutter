@@ -14,11 +14,11 @@ class _XylophoneAppState extends State<XylophoneApp> {
     player.play('note$soundNumber.wav');
   }
 
-  Expanded buildKey({Color color , int soundNumber}){
+  Expanded buildKey({Color color , int soundNumbers}){
     return Expanded(
                 child: TextButton(
                   onPressed: () {
-                    playSound(soundNumber);
+                    playSound(soundNumbers);
                   },
                   style: TextButton.styleFrom(
                       textStyle: const TextStyle(fontSize: 20),
@@ -40,13 +40,13 @@ class _XylophoneAppState extends State<XylophoneApp> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
              
-             buildKey(color:Colors.red, soundNumber: 1 ),
-              buildKey(color:Colors.orange, soundNumber: 2 ),
-               buildKey(color:Colors.yellow, soundNumber: 3 ),
-                buildKey(color:Colors.green, soundNumber: 4 ),
-                 buildKey(color:Colors.teal[200], soundNumber: 5 ),
-                  buildKey(color:Colors.blue, soundNumber: 6 ),
-                   buildKey(color:Colors.purple, soundNumber: 7 ),
+             buildKey(color:Colors.red, soundNumbers: 1 ),
+              buildKey(color:Colors.orange, soundNumbers: 2 ),
+               buildKey(color:Colors.yellow, soundNumbers: 3 ),
+                buildKey(color:Colors.green, soundNumbers: 4 ),
+                 buildKey(color:Colors.teal[200], soundNumbers: 5 ),
+                  buildKey(color:Colors.blue, soundNumbers: 6 ),
+                   buildKey(color:Colors.purple, soundNumbers: 7 ),
               
             ],
           ),
